@@ -67,7 +67,7 @@ function setup() {
     let training_s = random(100, 360);
     let training_b = random(200, 360);
     let targets = trainColor(training_h);
-    let inputs = [training_h / 360, training_s / 260, training_b / 160];
+    let inputs = [training_h / 360, training_s / 360, training_b / 360];
     brain.train(inputs, targets);
     //console.log(i);
     if(i==9999) isSpinning = true;
@@ -175,7 +175,7 @@ function teachColour(idx) {
   }
   console.log(targets);
   
-  let inputs = [h / 360, s / 260, b / 160];
+  let inputs = [h / 360, s / 360, b / 360];
   brain.train(inputs, targets);
   
 } 
@@ -217,7 +217,7 @@ function trainColor(h_) {
 
 function colorPredictor(h, s, b) {
   // console.log(floor(r + g + b));
-  let inputs = [h / 360, s / 260, b / 160];
+  let inputs = [h / 360, s / 360, b / 360];
   console.log(inputs);
   let outputs = brain.predict(inputs);
   console.log(outputs);
