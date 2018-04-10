@@ -1,0 +1,39 @@
+<!DOCTYPE html><html><head>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.dom.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+  </head>
+  
+  <body>
+    
+    <div class="ui show" id="container01">
+      <div class="click">Click!</div>
+    </div>
+    <div class="ui hide" id="container02">
+      <div class="guess" id="isthiscolour"></div>
+      <div class="buttons">
+      	<div class="btn" id="yes">YES</div><div class="btn" id="no">NO</div><div class="btn" id="dontcare">SKIP</div>
+      </div>
+    </div>
+    <div class="ui hide" id="container03">
+      <div class="guess">What color is it?</div>
+      <div class="buttons">
+        <div class="btn" id="red">Reddish</div>
+        <div class="btn" id="orange">Orangish</div>
+        <div class="btn" id="yellow">Yellowish</div>
+      </div>
+      <div class="buttons">
+        <div class="btn" id="green">Greenish</div>
+        <div class="btn" id="blue">Bluish</div>
+        <div class="btn" id="purple">Purplish</div>
+      </div>
+    </div>
+    
+    <script src="libraries/nn.js"></script>
+    <script src="libraries/matrix.js"></script>
+    <script src="sketch.js"></script>
+  
+
+</body></html>
